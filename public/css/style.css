@@ -1,0 +1,1621 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ========WhatsApp========= */
+
+.whats {
+    padding: 5px;
+    width: 50px;
+    border: 2px solid #FFF;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    border-radius: 100px;
+    background: #2F9C69;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #FFF;
+    z-index: 999;
+    cursor: pointer;
+    animation: whats 1s infinite alternate;
+}
+
+.whats:hover {
+    animation: whatshover 3s infinite alternate;
+}
+
+#chat-whats {
+    transition: .5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#chat-whats.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#chat-whats.hide {
+    right: 0;
+}
+
+.chat-whats {
+    box-shadow: 7px 7px 50px black;
+    /* border: 2px solid black; */
+    width: 250px;
+    border-radius: 20px 20px 0 20px;
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    z-index: 99;
+    background: #FFF;
+}
+
+
+
+
+/* header */
+.chat-whats header {
+    border-radius: 20px 20px 0 0;
+    padding: 8px;
+    background: #2F9C69;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chat-whats header p {
+    color: #000;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.user-whats {
+    /* border: 1px solid black; */
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/icon-logo.png') no-repeat;
+    background-size: cover;
+
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+
+.close-whats {
+    border: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    /* color: #FFF; */
+    cursor: pointer;
+    background: none;
+    transition: .4s;
+}
+
+.close-whats:hover {
+    color: #FFF;
+}
+
+.close-whats i {
+    pointer-events: none;
+}
+
+/* header fim*/
+
+/* section */
+
+.chat-whats section {
+    /* border-radius: 20px 20px 0 0; */
+    padding: 5px;
+    height: 283px;
+    background: #B5F5BF;
+    position: relative;
+}
+
+.chat {
+    /* border: 1px solid black; */
+    height: 100%;
+    background: #FFF;
+    padding: .3rem;
+    border-radius: 5px;
+
+}
+
+/* section fim */
+
+/* footer */
+
+.chat-whats footer {
+    border-radius: 0 0 0px 20px;
+    padding: 10px;
+    background: #2F9C69;
+}
+
+.box-chat {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-chat input {
+    border-radius: 20px;
+    border: 0;
+    padding: 3px 5px;
+}
+
+.box-chat button {
+    border-radius: 20px;
+    border: 0;
+    padding: .5rem .6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: .8;
+}
+
+.box-chat button:hover {
+    opacity: 1;
+}
+
+/* footer fim */
+
+
+
+@keyframes whatshover {
+    0% {
+        background: #24754f;
+        transform: rotate(0deg);
+    }
+
+
+    50% {
+        transform: rotate(180deg);
+        box-shadow: 0px 0px 10px #18422f;
+        transform: scale(1.3);
+    }
+
+    100% {
+
+        transform: rotate(-40deg);
+    }
+}
+
+@keyframes whats {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(20deg);
+    }
+
+    100% {
+        transform: rotate(-10deg);
+    }
+
+}
+
+/* fim WhatsApp */
+
+/* ================= */
+.cabecalho {
+    background: #dbdbdb9f;
+    width: 100%;
+    position: absolute;
+    /* ou fixed */
+    z-index: 9999;
+}
+
+.nav {
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    /* border: 1px solid red;    */
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.logo {
+    width: 25em;
+    padding: 20px;
+}
+
+.list-nav {
+    z-index: 10;
+    display: flex;
+    list-style: none;
+}
+
+.links-nav {
+    margin: 10px;
+}
+
+.links-nav a {
+    font-weight: bold;
+
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 500ms;
+}
+
+.links-nav a:hover {
+    background: #4281f5c5;
+    color: #FFF;
+}
+
+.links-nav a:active {
+    transform: scale(1.1);
+    background: #234fa1c5;
+}
+
+.ativo a {
+    background: #4281f5c5;
+    color: #FFf;
+    font-weight: bold;
+}
+
+#openMenuLateral {
+    display: none;
+    font-size: 2rem;
+}
+
+
+.menu:hover {
+    color: blue;
+}
+
+@media (max-width: 1000px) {
+
+    #openMenuLateral {
+        background: transparent;
+        border: 0;
+        padding: 5px;
+        display: block;
+        position: absolute;
+        right: 15px;
+        cursor: pointer;
+        transition: all 500ms;
+        border-radius: 10px;
+    }
+
+    #openMenuLateral:hover {
+        background: #c5c5cf93;
+    }
+
+    .logo {
+        /* border: 1px solid red ; */
+        width: 15em;
+        padding: 20px;
+    }
+
+    .list-nav {
+        display: none;
+    }
+
+}
+
+#menuLateral,
+#fundoMenuLateral {
+    transition: .5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#menuLateral.menuHide,
+#fundoMenuLateral.menuHide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#menuLateral.menuHide {
+    left: -100px;
+}
+
+#menuLateral {
+    position: fixed;
+    width: 50vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: #ffff;
+    list-style: none;
+
+    align-items: center;
+    border: 1px solid gray;
+    box-shadow: 5px 0px 20px black;
+    z-index: 11;
+}
+
+#fundoMenuLateral {
+    position: fixed;
+    top: 0;
+    height: 500%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.404);
+    backdrop-filter: blur(3px);
+}
+
+
+.menu-list-nav {
+    z-index: 10;
+    display: flex;
+    list-style: none;
+    border-bottom: 1px solid gray;
+}
+
+.menu-links-nav {
+    margin: 10px;
+}
+
+.menu-links-nav a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 500ms;
+
+}
+
+.menu-links-nav a:hover {
+    background: #4281f5c5;
+    color: #FFF;
+}
+
+.menu-links-nav a:active {
+    transform: scale(1.1);
+    background: #234fa1c5;
+
+}
+
+.ativo a {
+    background: #4281f5c5;
+    color: #FFf;
+    font-weight: bold;
+}
+
+.btn-fechar {
+    cursor: pointer;
+    font-size: 20px;
+    border: 0;
+    height: 50px;
+    background: rgb(143, 51, 51);
+    color: #FFF;
+    width: 100%;
+}
+
+.btn-fechar {
+    cursor: pointer;
+    font-size: 20px;
+    border: 0;
+    height: 50px;
+}
+
+/* ============================ */
+
+.conteudo {
+    background: url('../img/porto.jpeg') no-repeat;
+    background-size: cover;
+    height: 55em;
+    width: 100%;
+    transition: all 500ms;
+    position: relative;
+}
+
+.box-text {
+    transition: all 500ms;
+    position: absolute;
+    top: 220px;
+    width: 900px;
+    padding: 10px;
+    left: 100px;
+    background: rgba(0, 0, 0, 0.425);
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+.box-text h1 {
+    color: #FFF;
+    transition: all 500ms;
+    font-size: 60px;
+}
+
+.box-text p {
+    margin-top: 30px;
+    color: #FFF;
+    transition: all 500ms;
+    font-size: 30px;
+}
+
+.btn-orcamento {
+    border: 0;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: red;
+    color: #FFF;
+    font-weight: bold;
+    transition: all 500ms;
+}
+
+.btn-orcamento:hover {
+    background: rgb(141, 4, 4);
+    cursor: pointer;
+}
+
+.faixaRed {
+    width: 750px;
+    height: 50px;
+    background: rgba(214, 214, 214, 0.568);
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    transition: all 500ms;
+    z-index: 1;
+}
+
+.faixaRed::after {
+    content: '';
+    width: 700px;
+    height: 50px;
+    background: red;
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    transition: all 500ms;
+    z-index: 0;
+}
+
+/* conteudo 2 */
+
+
+.conteudo2 {
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.box-cont-2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #FFF;
+    /* border: 1px solid red; */
+    width: 100%;
+
+}
+
+.box-cont-2 h1 {
+    margin: 0 auto;
+
+}
+
+.linhaVermalha {
+    width: 30%;
+    margin: 10px auto;
+    border-top: 2px solid red;
+}
+
+.boxMaquina {
+    flex-wrap: wrap;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+}
+
+.boxImg {
+    /* border: 1px solid red; */
+    width: 35em;
+    margin: 55px;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+    /* box-shadow: 50px 50px 1px red; */
+    z-index: 1;
+}
+
+.boxImg img {
+    /* border: 1px solid red; */
+    box-shadow: 40px 40px red;
+}
+
+.box-informativo {
+    padding: 10px;
+    margin: 55px;
+    width: 35em;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    /* border: 1px solid red; */
+}
+
+.informacao {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.box1,
+.box2,
+.box3 {
+    /* border: 1px solid red; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 20PX;
+}
+
+.cap-box {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    padding: 10PX;
+}
+
+.infoBox {
+    /* border: 1px solid red; */
+    padding-right: 10px;
+    margin-top: 20px;
+    display: flex;
+
+    align-items: end;
+}
+
+
+/* conteudo 3 */
+
+.conteudo3 {
+    /* border: 1px solid red; */
+    background: url('../img/maquinas1.png') no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.filtroBlack {
+    /* border: 1px solid red; */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #0000008f;
+}
+
+.faixaRed2 {
+    width: 750px;
+    height: 50px;
+    background: red;
+    position: absolute;
+    left: 0;
+    top: -15px;
+    transition: all 500ms;
+    z-index: 1;
+}
+
+.cap-conteudo3 {
+    margin-top: 70px;
+    /* border: 4px solid red; */
+    width: 100%;
+    padding: 20px;
+    z-index: 1;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.boxImg2 {
+    /* border: 1px solid red; */
+    width: 30em;
+    height: 30em;
+    margin: 55px;
+    display: flex;
+    align-items: center;
+
+    z-index: 1;
+    background: url('../img/brunin.jpeg')no-repeat;
+    background-size: 100% 100%;
+    box-shadow: 40px 40px red;
+}
+
+.box-red {
+    width: 35em;
+    color: #FFF;
+    background: red;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 50px;
+
+}
+
+/* conteudo 4 */
+
+.conteudo4 {
+    /* border: 1px solid red; */
+    /* background: gray; */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+}
+
+.titulo-cont4 {
+    position: absolute;
+    left: 0;
+    border-left: 2px solid red;
+    margin: 25px;
+    padding-left: 30px;
+}
+
+.imgSlide {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+
+.cap-slide {
+    /* border: 1px solid red; */
+    width: 45em;
+    height: 35em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    margin: 50px;
+}
+
+.box-btnSlide {
+    display: flex;
+    align-items: center;
+    width: 60em;
+    height: 20em;
+    /* border: 1px solid red; */
+    position: absolute;
+    justify-content: space-between;
+}
+
+.btn-voltar {
+    width: 40px;
+    background: transparent;
+    color: red;
+    border-radius: 10px;
+    border: 0;
+    left: 0px;
+
+    cursor: pointer;
+    font-size: 60px;
+}
+
+.btn-avancar {
+    width: 40px;
+    cursor: pointer;
+    background: transparent;
+    color: red;
+    border-radius: 10px;
+    border: 0;
+    font-size: 60px;
+}
+
+.patrocinios {
+    /* border: 1px solid red; */
+    margin-top: 170px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.patrocinios img {
+    /* border: 1px solid red; */
+    margin: 20px;
+}
+
+/* conteudo 5 */
+
+.conteudo5 {
+    /* border: 1px solid red; */
+    background: red;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box-info-cont5 {
+    /* border: 1px solid #000; */
+    margin: 20px;
+    width: 400px;
+    display: flex;
+    color: #FFF;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.box-info-cont5 img {
+    margin-right: 10px;
+}
+
+/* conteudo 6 */
+
+.conteudo6 {
+    display: flex;
+    /* border: 1px solid red; */
+    padding: 15px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: 17px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-estoque {
+    display: flex;
+    flex-direction: column;
+    width: 50em;
+    /* border: 1px solid red; */
+
+}
+
+.box-book {
+    margin: 20px;
+    width: 20em;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px;
+    text-align: center;
+}
+
+.box-book button {
+    background: red;
+    border: 0;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #FFF;
+
+}
+
+.box-book button:active {
+    background: rgb(121, 32, 32);
+}
+
+/* conteudo 7 */
+
+.conteudo7 {
+    /* border: 1px solid red; */
+    background: url('../img/maquinas-ferd.jpeg')no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.text-red {
+    background: red;
+    border-radius: 50px;
+    text-align: center;
+    width: 400px;
+    color: #FFF;
+}
+
+.cards-info {
+
+    /* border: 1px solid red; */
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+    margin: 200px 20px 20px 20px;
+    background: #FFf;
+    padding: 70px 20px 20px 20px;
+    border-radius: 20px;
+    /* border: 1px solid red; */
+    width: 400px;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+}
+
+.circu-card {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    /* border: 1px solid red; */
+    top: -130px;
+    left: 100px;
+    background: #FFF;
+    padding-top: 15px;
+}
+
+.circu-card img {
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+
+}
+
+/* conteudo 8 */
+
+/* .conteudo8 {
+    border: 1px solid red;
+    padding-left: 40px;
+    padding-right: 50px;
+}
+
+.titulo-cont8 {
+    position: absolute;
+    left: 0;
+    border-left: 2px solid red;
+    margin: 25px;
+    padding-left: 30px;
+}
+
+.box-cont8 {
+    border: 1px solid red;
+    margin-top: 130px;
+    height: 400px;
+
+    position: relative;
+
+}
+
+.descricao-cont8 {
+    border: 1px solid red;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    justify-content: center;
+
+}
+
+.img-box-cont8 {
+    position: absolute;
+    bottom: 8%;
+    right: 0;
+
+}
+
+.img2-cont8 {
+    border: 1px solid red;
+
+}
+
+.img1-cont8 {
+    position: absolute;
+    bottom: 0;
+    border: 1px solid red;
+
+} */
+
+
+/* conteudo 9 */
+
+
+.rodape {
+    background: red;
+    height: 100%;
+    border-top-left-radius: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    /* border: 1px solid black; */
+
+    justify-content: space-evenly;
+
+
+}
+
+.title-rodape {
+
+    display: flex;
+
+}
+
+.title-rodape h1 {
+    /* border: 1px solid black; */
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFFF;
+    letter-spacing: 5px;
+}
+
+.box-info {
+    /* border: 1px solid blac   k; */
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+}
+
+
+.box-Info-rodape {
+    /* border: 1px solid black; */
+    font-size: 20px;
+    color: #FFF;
+}
+
+.box-Info-rodape-img {
+    /* border: 1px solid black; */
+    width: 400px;
+    display: flex;
+    align-items: end;
+}
+
+
+.box-maps {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    flex-wrap: wrap;
+
+}
+
+iframe {
+    width: 950px;
+    height: 500PX;
+    /* border: 1px solid black; */
+    transition: all 500ms;
+    border: 0;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responssividade */
+
+
+@media (max-width:1565px) {
+
+    iframe {
+        width: 698px;
+        height: 500PX;
+    }
+
+}
+
+@media (max-width:1315px) {
+
+    iframe {
+        width: 498px;
+        height: 300PX;
+    }
+
+    .box-Info-rodape-img {
+
+        width: 300px;
+
+    }
+
+}
+
+@media (max-width:1015px) {
+
+    iframe {
+        width: 298px;
+        height: 300PX;
+    }
+
+    .box-Info-rodape-img {
+
+        width: 298px;
+
+    }
+
+}
+
+@media (max-width: 1090px) {
+
+    .box-text {
+        /* border: 1px solid red; */
+
+        position: absolute;
+        top: 180px;
+        width: 700px;
+        padding: 10px;
+        left: 70px;
+        background: rgba(0, 0, 0, 0.425);
+        border-radius: 10px;
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(2px);
+    }
+
+    .box-text h1 {
+        color: #FFF;
+        font-size: 50px;
+    }
+
+    .box-text p {
+        margin-top: 30px;
+        color: #FFF;
+        font-size: 20px;
+    }
+
+    .conteudo {
+        background: url('../img/porto.jpeg') no-repeat;
+        background-size: cover;
+        height: 40em;
+        width: 100%;
+        transition: all 500ms;
+    }
+
+
+    .faixaRed {
+        width: 550px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.568);
+        position: absolute;
+        right: 0;
+        bottom: -20px;
+        z-index: 1;
+    }
+
+    .faixaRed::after {
+        content: '';
+        width: 500px;
+        height: 50px;
+        background: red;
+        position: absolute;
+        right: 0;
+        bottom: -20px;
+        z-index: 0;
+    }
+
+    .cap-slide {
+        /* border: 1px solid red; */
+        width: 40em;
+        height: 35em;
+
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+
+
+    .box-btnSlide {
+        display: flex;
+        align-items: center;
+        /* border: 1px solid red; */
+        width: 53em;
+        height: 20em;
+        z-index: 10;
+        position: absolute;
+        justify-content: space-between;
+    }
+
+
+}
+
+@media (max-width: 910px) {}
+
+@media (max-width: 830px) {
+
+    .box-text {
+        /* border: 1px solid red; */
+
+        position: absolute;
+        top: 150px;
+        width: 500px;
+        padding: 10px;
+        left: 60px;
+        background: rgba(0, 0, 0, 0.425);
+        border-radius: 10px;
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(2px);
+    }
+
+    .box-text h1 {
+        color: #FFF;
+        font-size: 40px;
+    }
+
+    .box-text p {
+        margin-top: 30px;
+        color: #FFF;
+        font-size: 20px;
+    }
+
+    .conteudo {
+        background: url('../img/porto.jpeg') no-repeat;
+        background-size: cover;
+        height: 40em;
+        width: 100%;
+        transition: all 500ms;
+    }
+
+
+
+    .faixaRed {
+        width: 400px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.568);
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+        z-index: 1;
+    }
+
+    .faixaRed::after {
+        content: '';
+        width: 350px;
+        height: 50px;
+        background: red;
+        position: absolute;
+        right: 0;
+        bottom: -20px;
+        z-index: 0;
+    }
+
+    .cap-slide {
+        /* border: 1px solid red; */
+        width: 35em;
+        height: 35em;
+
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+
+
+    .box-btnSlide {
+        display: flex;
+        align-items: center;
+        /* border: 1px solid red; */
+        width: 43em;
+        height: 20em;
+        z-index: 10;
+        position: absolute;
+        justify-content: space-between;
+    }
+
+
+}
+
+@media (max-width: 630px) {
+
+    .box-text {
+        /* border: 1px solid red; */
+
+        position: absolute;
+        top: 130px;
+        width: 80%;
+        padding: 10px;
+        left: 30px;
+        background: rgba(0, 0, 0, 0.425);
+        border-radius: 10px;
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(2px);
+    }
+
+    .box-text h1 {
+        color: #FFF;
+        font-size: 23px;
+    }
+
+    .box-text p {
+        margin-top: 30px;
+        color: #FFF;
+        font-size: 13px;
+    }
+
+    .conteudo {
+        background: url('../img/porto.jpeg') no-repeat;
+        background-size: cover;
+        height: 30em;
+        width: 100%;
+        transition: all 500ms;
+    }
+
+    .faixaRed {
+        width: 180px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.568);
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+        z-index: 1;
+    }
+
+    .faixaRed::after {
+        content: '';
+        width: 130px;
+        height: 50px;
+        background: red;
+        position: absolute;
+        right: 0;
+        bottom: -20px;
+        z-index: 0;
+    }
+
+    .cap-slide {
+        display: none;
+    }
+
+    .box-btnSlide {
+        display: none;
+    }
+
+}
+
+
+/*
+.cabecalho{
+    background: #ffffff9f;
+    display: flex;
+    width:100vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho img{
+   padding: 15px;
+}
+
+.list-nav{
+    z-index: 10;
+    display: flex;
+
+    list-style: none;
+}
+
+.links-nav{
+    margin: 10px;
+  
+    
+}
+.links-nav a{
+    text-decoration: none;
+    color: black;
+  
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 500ms;
+}
+.links-nav a:hover {
+   
+    background: gray;
+    color: #FFF;
+}
+.ativo a{
+  
+    background: gray;
+    color: #FFF;
+
+
+}
+
+@media (max-width: 950px) {
+
+    .list-nav{
+        display: none;
+    }
+}
+
+.conteudo{
+  
+    background: url('../img/maquinas-ferd.jpeg') no-repeat;
+    background-size: cover;
+    height: 80%;
+    width: 100%;
+    top: 0;
+    z-index: -2;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.conteudo::before{
+    content: '';
+    background: rgba(0, 0, 0, 0.692);
+    height: 743px;
+    width: 100vw;
+    z-index: -3;
+    position: absolute;
+}
+
+.content-text{
+    transition: all 500ms;
+    position: absolute;
+    top: 300px;
+    width: 900px;
+    padding: 10px;
+    margin-left: 150px ;
+}
+.content-text h1{
+    color: #FFF;
+    font-size: 60px;
+}
+.content-text p{
+   
+
+    margin-top: 30px;
+
+    color: #FFF;
+    font-size: 30px;
+}
+.btn-orcamento{
+    border: 0;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background: red;
+    color: #FFF;
+    font-weight: bold;
+    transition: all 500ms;
+}
+.btn-orcamento:hover{
+    background: rgb(141, 4, 4);
+    cursor: pointer;
+}
+
+.grade{
+    top: 700px ;
+    background: url('../img/grade-branco.png')  repeat;
+    background-size: 70px;
+
+    width: 500px;
+    position: absolute; 
+    right: 0;
+   
+    height: 70px;
+    transition: all 500ms;
+}
+
+.faixa{
+    top: 720px ;
+    background: red;
+    background-size: 70px;
+    border: 1px solid red; 
+    width: 450px;
+    position: absolute; 
+    right: 0;
+
+    height: 70px;
+    transition: all 500ms;
+}
+
+@media (max-width: 1090px) {
+    
+    .content-text{
+  
+    position: absolute;
+    top: 200px;
+    width: 70%;
+    padding: 10px;
+    margin-left: 10% ;
+    
+}
+
+.content-text h1{
+  
+    color: #FFF;
+    font-size: 40px;
+}
+.content-text p{
+   
+
+    margin-top: 30px;
+  
+    color: #FFF;
+    font-size: 20px;
+
+}
+
+.conteudo{
+    background: url('../img/maquinas-ferd.jpeg') no-repeat;
+    background-size: cover;
+    height: 60%;
+    width: 100vw;
+    top: 0;
+    z-index: -2;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudo::before{
+    content: '';
+    background: rgba(0, 0, 0, 0.692);
+    height: 548px;
+    width: 100vw;
+    z-index: -3;
+    position: absolute;
+}
+
+.grade {
+    top: 500px ;
+    background: url('../img/grade-branco.png')  repeat;
+    background-size: 70px;
+
+    width: 300px;
+    position: absolute; 
+    right: 0;
+
+    height: 70px;
+}
+
+.faixa{
+    top: 520px ;
+    background: red;
+    background-size: 70px;
+
+    width: 250px;
+    position: absolute; 
+    right: 0;
+    
+    height: 70px;
+}
+
+
+}
+
+@media (max-width: 653px) {
+
+    .content-text{
+
+        position: absolute;
+        top: 200px;
+        width: 70%;
+        padding: 10px;
+        margin-left: 10% ;
+        
+    }
+    
+    .content-text h1{
+
+        color: #FFF;
+        font-size: 40px;
+    }
+
+    .content-text p{
+        margin-top: 30px;
+
+        color: #FFF;
+        font-size: 20px;
+
+    }
+    
+    .conteudo{
+        background: url('../img/maquinas-ferd.jpeg') no-repeat;
+        background-size: cover;
+        height: 70%;
+        width: 100vw;
+        top: 0;
+        z-index: -2;
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .conteudo::before{
+        content: '';
+        background: rgba(0, 0, 0, 0.692);
+        height: 638px;
+        width: 100vw;
+        z-index: -3;
+        position: absolute;
+    }
+    
+    .grade {
+        top: 600px ;
+        background: url('../img/grade-branco.png')  repeat;
+        background-size: 70px;
+ 
+        width: 300px;
+        position: absolute; 
+        right: 0;
+
+        height: 70px;
+    }
+    
+    .faixa{
+        top: 630px ;
+        background: red;
+        background-size: 70px;
+  
+        width: 250px;
+        position: absolute; 
+        right: 0;
+
+        height: 70px;
+    }
+   
+}
+
+.whats{
+    padding: 5px;
+    width: 50px;
+    border: 1px solid red; 
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    border-radius: 100px;
+    background: red;
+    display: flex;
+}
+
+.conteudo2{
+    margin: 0 auto;
+    position: absolute;
+    top: 743px;
+    border: 1px solid red; 
+    display: block;
+    padding: 15px;
+}
+
+.container{
+    display: flex;
+  
+    border: 1px solid red;
+    
+} */
